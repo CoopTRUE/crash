@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-vercel'
+import adapter from '@sveltejs/adapter-node'
 import autoprefixer from 'autoprefixer'
 import preprocess from 'svelte-preprocess'
 
@@ -11,7 +11,7 @@ const config = {
   }),
 
   kit: {
-    adapter: adapter({ edge: true, split: true })
+    adapter: adapter({ precompress: true })
   }
 }
 
