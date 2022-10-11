@@ -2,7 +2,7 @@
   import { onMount } from 'svelte'
   import { Chart, LineSeries } from 'svelte-lightweight-charts'
   import { socket } from '$lib/stores'
-  socket.subscribe('')
+  // socket.subscribe('')
 
   let current = 1
   const data = Array(20)
